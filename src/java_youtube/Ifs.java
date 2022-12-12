@@ -1,3 +1,5 @@
+package java_youtube;
+
 public class Ifs {
     public static void main(String[] args) {
         int myInt = 15;

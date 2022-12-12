@@ -1,7 +1,7 @@
 package TelRan;
 
 public class Variables {
-    public static void main(String[] args) {
+    public static <String> void main(String[] args) {
         // Переменные
         int x = 25;
         int y;
