@@ -30,7 +30,7 @@ public class WorkWithString {
 
         System.out.println(sunText + " " + sunText.length());
 
-        System.out.println(text.substring(45));
+        System.out.println(text.substring(15));
 
     }
 }
