@@ -16,4 +16,7 @@ public class Methods {
     public double Valuta (double x) {   // Курс валют
         return x / 1.06;                  // 1.06 курс доллара
     }
+    public int Pizza (int x) {   // Диаметр пиццы > 24
+        return (x*x)/4;                  // Площадь пиццы
+    }
 }
