@@ -2,7 +2,7 @@ package HomeWorkJava_17_12_2022;
 
 import java.util.Scanner;
 
-public class Task3 {
+public class Task3_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите любое слово"); // Первое слово
@@ -20,5 +20,6 @@ public class Task3 {
         String word4 = (word2.substring(0, word2.length()/2)) +    // 1 часть второго слова и 2 часть первого слова
                 (word1.substring(word1.length()/2, word1.length()));
         System.out.println(word4);
+
     }
 }
