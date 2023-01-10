@@ -1,6 +1,6 @@
 package HomeWork.HomeWork_22_12_2022;
 import java.util.Scanner;
-class Methods {
+public class Methods {
 
     public static int scannerNew (String text){
         Scanner scanner = new Scanner(System.in);
@@ -12,18 +12,27 @@ class Methods {
         System.out.println(text);
         return scanner.nextBoolean();
     }
-    static int numberOfLifts () {
-        int floor = Methods.scannerNew("Введите высоту здания");
-        int stepUp = Methods.scannerNew("На какую высоту поднимается лифт");
-        int stepDown = Methods.scannerNew("На сколько этажей опускается лифт");
+    public static String scannerText (String text){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(text);
+        return scanner.nextLine();
+    }
+    public static int numberOfLifts () {
+        int buildingSize = scannerNew("Введите высоту здания");
+        int stepUp = scannerNew("На какую высоту поднимается лифт");
+        int stepDown = scannerNew("На сколько этажей опускается лифт");
 
-        int lift = 0;
-        int number = 0;
-        while (lift < floor) {
-            lift = lift+stepUp-stepDown;
-            number++;
+        int currentFloor = 0;
+        int dayCounter = 0;
+
+        while (currentFloor < buildingSize) {
+            dayCounter++;
+            currentFloor = currentFloor + stepUp;
+            if (currentFloor >= buildingSize) {
+                break;}
+            currentFloor = currentFloor - stepDown;
         }
-        return number;
+        return dayCounter;
     }
     static int operationsNumber (int amount) {
         int days = 0;
