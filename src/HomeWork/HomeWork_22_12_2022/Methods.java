@@ -32,7 +32,7 @@ public class Methods {
                 break;}
             currentFloor = currentFloor - stepDown;
         }
-        return dayCounter;
+        return dayCounter; // выводим количество дней
     }
     static int operationsNumber (int amount) {
         int days = 0;
