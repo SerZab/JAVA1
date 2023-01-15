@@ -1,12 +1,21 @@
 package java_youtube;
 
-
-import HomeWork.HomeWork_22_12_2022.Methods;
-import java_youtube.Packet1.Person;
+import java.util.*;
 
 public class Test {
     public static void main(String[] args) {
-        Person person1 = new Person();
-        System.out.println("Лифт превысил колличество этажей на " + Methods.numberOfLifts() + " подъеме");
+        List animals = new ArrayList();
+        animals.add("Dogs");
+        animals.add("Cats");
+        animals.add("frog");
+        String animal = (String) animals.get(0);
+        System.out.println(animals.get(2)+animal);
+
+        System.out.println("Dinamics array");
+        List<String> animals2 = new ArrayList<>();
+        animals2.add("Dog");
+        animals2.add("Cat");
+        animals2.add("frog");
+        System.out.println(animals2.get(0));
     }
 }
