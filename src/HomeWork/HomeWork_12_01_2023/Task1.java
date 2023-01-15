@@ -1,4 +1,4 @@
-package HomeWork.HomeWork_12_01_2022;
+package HomeWork.HomeWork_12_01_2023;
 
 import java.util.Arrays;
 
@@ -15,7 +15,7 @@ public class Task1 {
         System.out.println("Заменяем каждый элемент с нечётным индексом на ноль");
 
         for (int i = 0; i < array.length; i++) { // Замените каждый элемент с нечётным индексом на ноль
-        if (i % 2 == 0) { array[i] = 0; }}
+        if (i % 2 == 1) { array[i] = 0; }}
         System.out.println(Arrays.toString(array)); //Снова выведете массив на экран на отдельной строке
     }
 }
