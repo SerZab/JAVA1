@@ -9,7 +9,7 @@ public class Main {
         int [] array1 = new int[]{1,2,3,4,5};
         System.out.println(Arrays.toString(array1));
 
-        int[] array2 = Arrays.copyOfRange(array1, 0, 2);
+        int[] array2 = Arrays.copyOfRange(array1, 0, 4);
         System.out.println(Arrays.toString(array2));
 
         int[] array3 = Arrays.copyOfRange(array1, 3, 5);
