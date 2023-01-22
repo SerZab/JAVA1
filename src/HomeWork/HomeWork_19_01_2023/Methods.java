@@ -48,4 +48,22 @@ public class Methods {
         }
         return pairs;
     }
+    // Task3
+    public String scannerCheck (String text) { //Запрос строк у пользователя
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(text);
+        while (!(scanner.hasNext ("=") | scanner.hasNext ("равно"))){ //проверка ввода данных (=, равно)
+            System.out.println(text);
+            scanner.nextLine();
+        }
+        return scanner.next();
+    }
+
+    public StringBuilder findUndReplaceCharToString (StringBuilder text, char s, String str1){ //метод замены символа на строки
+        for (int i = 0; i < text.length(); i++) {
+        if (text.charAt(i) == s){
+            text.deleteCharAt(i);
+            text.insert((i),str1);}
+        } return text;
+    }
 }

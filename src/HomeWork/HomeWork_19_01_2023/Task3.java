@@ -42,6 +42,18 @@ public class Task3 {
         text2.append(a * b);
         System.out.println(text2); // 3 * 56 = 168
 
+        // Исправил ошибку, написал метод поиска и замены
+        // Атакже применил метод сканнера с проверкой ввода нужных, по заданиу данных
+
+        String str = methods.scannerCheck("Введите символ '=', который необходимо заменить на строку");
+        String str1 = methods.scannerCheck("Введите строку 'равно'");
+        char s = str.charAt(0);
+
+        System.out.println(methods.findUndReplaceCharToString(text,s,str1));
+        System.out.println(methods.findUndReplaceCharToString(text1,s,str1));
+        System.out.println(methods.findUndReplaceCharToString(text2,s,str1));
+        
+        /*
         text.deleteCharAt(7);
         text.insert(7,"равно");
         System.out.println(text);
@@ -51,6 +63,6 @@ public class Task3 {
 
         text2.replace(7, 8,"равно");
         System.out.println(text2);
-        
+         */
     }
 }
