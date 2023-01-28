@@ -57,12 +57,10 @@ public class Task3 {
         text.deleteCharAt(7);
         text.insert(7,"равно");
         System.out.println(text);
-
         text1.replace(7, 8,"равно");
         System.out.println(text1);
-
         text2.replace(7, 8,"равно");
         System.out.println(text2);
-         */
+        */
     }
 }
